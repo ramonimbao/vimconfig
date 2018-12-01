@@ -53,7 +53,7 @@ let g:lightline = {
 	\ },
 \ }
 function! LightlineFilename()
-	return expand('%:t') !=# '' ? @% : '[No Name]'
+	return expand('%:t') !=# '' ? @% : '[Untitled]'
 endfunction
 
 " from http://sheerun.net/2014/03/21/how-to-boost-your-vim-productivity
@@ -198,7 +198,7 @@ set listchars=nbsp:¬,extends:»,precedes:«,trail:•
 
 " ========== KEYBOARD SHORTCUTS
 " ; as :
-nnoremap ; :
+" nnoremap ; :
 
 " Ctrl+c and Ctrl+j as Esc
 inoremap <C-j> <Esc>
@@ -212,8 +212,8 @@ vnoremap <C-f> :sus<cr>
 nnoremap <C-f> :sus<cr>
 
 " Jump to start and end of line using the home row keys
-map H ^
-map L $
+nmap H ^
+nnoremap L $
 
 " <leader>s for Rg search
 noremap <leader>s :Rg
