@@ -211,10 +211,6 @@ inoremap <C-f> :sus<cr>
 vnoremap <C-f> :sus<cr>
 nnoremap <C-f> :sus<cr>
 
-" Jump to start and end of line using the home row keys
-nmap H ^
-nmap L $
-nnoremap L $
 
 " <leader>s for Rg search
 noremap <leader>s :Rg
@@ -308,3 +304,7 @@ autocmd BufRead *.tex set filetype=tex
 autocmd BufRead *.trm set filetype=c
 autocmd BufRead *.xlsx.axlsx set filetype=ruby
 
+" Jump to start and end of line using the home row keys
+" I placed this at the bottom because it only works if it's here
+nmap H ^
+nmap L $
