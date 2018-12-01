@@ -213,6 +213,7 @@ nnoremap <C-f> :sus<cr>
 
 " Jump to start and end of line using the home row keys
 nmap H ^
+nmap L $
 nnoremap L $
 
 " <leader>s for Rg search
